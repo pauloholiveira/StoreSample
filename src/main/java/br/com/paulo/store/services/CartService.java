@@ -41,9 +41,11 @@ public class CartService {
 	
 	public void removerItemProdutos(Long id) {
 		CartItem item = cart.getItens().get(id);
-		cart.removeItem(item);
+		if(item != null) {
+			cart.removeItem(item);
 		
-		cart.atualizarValorTotalCarrinho();
+			cart.atualizarValorTotalCarrinho();
+		}
 	}
 	
 	public void atualizarItemProdutos(Long id, Integer qtd) {
