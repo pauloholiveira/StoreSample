@@ -19,7 +19,7 @@ Endpoint: Aplicação encontra-se publicada na [Amazon AWS](http://ec2-54-207-18
 
 
 ## Api REST
-### * Carrinho
+### Carrinho
 * **Adicionar Produto ao Carrinho**
 
   * URL: http://ec2-54-207-18-144.sa-east-1.compute.amazonaws.com:8080/addToCart
@@ -111,6 +111,7 @@ Endpoint: Aplicação encontra-se publicada na [Amazon AWS](http://ec2-54-207-18
   * Response:
     String  - "success" caso tenha sido removido com sucesso.
 
-##### Authors
+##### Autor
 Nome: Paulo Henriqe de Oliveira
+
 Email: pauloh2004@gmail.com
