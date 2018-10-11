@@ -10,7 +10,7 @@ Sistema de Carrinho de Compras
 * Mysql: 5.7
 * Maven: 3.5.4
 * Spring Boot : 1.5.16
-
+* Hibernate :
 
 
 ## Deploy Aplicação
