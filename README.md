@@ -66,6 +66,7 @@ Endpoint: Aplicação encontra-se publicada na [Amazon AWS](http://ec2-54-207-18
   * Method: POST
   * Parameters: 
     1. produto - Exemplo: 
+    ```json
       "{
           "id": 21,
           "nome_descricao": "teste",
@@ -89,6 +90,7 @@ Endpoint: Aplicação encontra-se publicada na [Amazon AWS](http://ec2-54-207-18
   * Method: POST
   * Parameters: 
     1. produto existente com os novos dados - Exemplo: 
+    ```json 
       "{
           "id": 21,
           "nome_descricao": "testsssssssssse",
@@ -96,6 +98,7 @@ Endpoint: Aplicação encontra-se publicada na [Amazon AWS](http://ec2-54-207-18
       }"
   * Response:
     Produto atualizado.
+    ```json
       "{
           "id": 21,
           "nome_descricao": "testsssssssssse",
@@ -111,7 +114,14 @@ Endpoint: Aplicação encontra-se publicada na [Amazon AWS](http://ec2-54-207-18
   * Response:
     String  - "success" caso tenha sido removido com sucesso.
 
+
+## Dados teste
+ Dados usados para testes.
+[data.sql](https://github.com/pauloholiveira/store/blob/master/src/main/resources/data.sql)
+
 ##### Autor
 Nome: Paulo Henriqe de Oliveira
 
 Email: pauloh2004@gmail.com
+
+OBS: A projeto foi disponibilizado no dia 11/10/2018 as 17:30 no Branch Master, porém, alguns ajustes e aprimorações ainda poderão ser realizados em outros Branchs.
