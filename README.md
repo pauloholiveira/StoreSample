@@ -116,8 +116,11 @@ Endpoint: Aplicação encontra-se publicada na [Amazon AWS](http://ec2-54-207-18
 
 
 ## Dados teste
- Dados usados para testes.
-[data.sql](https://github.com/pauloholiveira/store/blob/master/src/main/resources/data.sql)
+ DataBase: store
+ 
+ Tabela: [schema.sql](https://github.com/pauloholiveira/store/blob/master/src/main/resources/schema.sql)
+
+ Dados de testes: [data.sql](https://github.com/pauloholiveira/store/blob/master/src/main/resources/data.sql)
 
 ##### Autor
 Nome: Paulo Henriqe de Oliveira
