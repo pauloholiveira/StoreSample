@@ -17,6 +17,14 @@ public class CartService {
 	private ProductRepository prodRepository;
 	
 	public CartItem adcionarProduto(Long id, Integer qtd) {
+		if(id==null) {
+			return null;
+		}
+		
+		if(qtd == null || qtd <=0) {
+			return null;
+		}
+		
 		Product produto = prodRepository.findOne(id);
 		CartItem item = null;
 		
@@ -49,13 +57,46 @@ public class CartService {
 	}
 	
 	public void atualizarItemProdutos(Long id, Integer qtd) {
-		CartItem item = cart.getItens().get(id);
-		if(item != null) {
-			item.setQuantidade(qtd);
-			item.setValor_item(item.getProduto().getValor()*qtd);
+		if(id==null) {
+			return;
 		}
+		
+		if(qtd != null && qtd > 0) {
+		
+			CartItem item = cart.getItens().get(id);
+			
+			if(item != null) {
+				item.setQuantidade(qtd);
+				item.setValor_item(item.getProduto().getValor()*qtd);
+			}
+		}
+		
 		cart.atualizarValorTotalCarrinho();
 	}
 	
+	public CartItem obterItem(Long id) {
+		if(id==null) {
+			return null;
+		}
+		
+		
+		CartItem item = cart.getItens().get(id);
+			
+		if(item != null) {
+			return item;
+		}
+		
+		return null;
+		
+	}
+
+	
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
 }
 

@@ -10,8 +10,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,12 +40,8 @@ public class ProductRestControllerIntegrationTest {
 	@Test
 	public void givenProducts_whenGetProducts_thenReturnJsonArray() throws Exception {
 
-	}
-	/*@Test
-	public void givenProducts_whenGetProducts_thenReturnJsonArray() throws Exception {
-
-		createTestEmployee(null, "Camiseta Teste", 50.00D);
-		createTestEmployee(null, "Camiseta Teste 2", 150.00D);
+		createTestProduct(null, "Camiseta Teste", 50.00D);
+		createTestProduct(null, "Camiseta Teste 2", 150.00D);
 
 		// @formatter:off
 		mvc.perform(get("/listProducts").contentType(MediaType.APPLICATION_JSON)).andDo(print())
@@ -76,7 +70,7 @@ public class ProductRestControllerIntegrationTest {
 	
 	@Test
 	public void deleteProduct() throws Exception {
-		createTestEmployee(null, "Camiseta Teste 5", 50.00D);
+		createTestProduct(null, "Camiseta Teste 5", 50.00D);
 		
 		// @formatter:off
 		mvc.perform(post("/deleteProduct").contentType(MediaType.APPLICATION_FORM_URLENCODED).param("id", "24")).andDo(print())
@@ -85,8 +79,17 @@ public class ProductRestControllerIntegrationTest {
 		
 	}
 
-	private void createTestEmployee(Long id, String name, Double valor) {
+	private Product createTestProduct(Long id, String name, Double valor) {
 		Product product = new Product(id, name, valor);
-		service.novoProduto(product);
-	}*/
+		product = service.novoProduto(product);
+		
+		return product;
+	}
+	
+	private Product deleteTestProduct(Long id, String name, Double valor) {
+		Product product = new Product(id, name, valor);
+		product = service.novoProduto(product);
+		
+		return product;
+	}
 }

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.paulo.store.StoreApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.265 sec - in br.com.paulo.store.StoreApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.781 sec - in br.com.paulo.store.StoreApplicationTests

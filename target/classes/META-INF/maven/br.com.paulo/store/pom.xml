@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>store</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Sistema de Carrinho de Compras.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -75,10 +75,9 @@
 		</dependency>
 		
 		 <dependency>
-    <groupId>com.google.code.gson</groupId>
-    <artifactId>gson</artifactId>
-    <version>2.8.5</version>
-</dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		</dependency>
 
 		
 	</dependencies>

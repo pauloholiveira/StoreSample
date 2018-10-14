@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.paulo.store.rest.ProductRestControllerIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.8 sec - in br.com.paulo.store.rest.ProductRestControllerIntegrationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.017 sec - in br.com.paulo.store.rest.ProductRestControllerIntegrationTest

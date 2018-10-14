@@ -1,0 +1,11 @@
+br\com\paulo\store\config\MvcConfig.class
+br\com\paulo\store\model\Cart.class
+br\com\paulo\store\StoreApplication.class
+br\com\paulo\store\repository\ProductRepository.class
+br\com\paulo\store\rest\ProdutoRestController.class
+br\com\paulo\store\services\CartService.class
+br\com\paulo\store\model\Product.class
+br\com\paulo\store\services\ProductsService.class
+br\com\paulo\store\controllers\ProdutosController.class
+br\com\paulo\store\rest\CarrinhoRestController.class
+br\com\paulo\store\model\CartItem.class
